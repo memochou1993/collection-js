@@ -3,6 +3,17 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/collection-js.umd.cjs",
+  "module": "./dist/collection-js.js",
+  "exports": {
+    ".": {
+      "import": "./dist/collection-js.js",
+      "require": "./dist/collection-js.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -10,6 +21,7 @@
     "lint": "eslint src"
   },
   "devDependencies": {
+    "@types/node": "^18.7.8",
     "@typescript-eslint/eslint-plugin": "^5.33.1",
     "@typescript-eslint/parser": "^5.33.1",
     "eslint": "^8.22.0",
