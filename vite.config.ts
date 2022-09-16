@@ -6,7 +6,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'CollectionJS',
-      fileName: 'collection-js',
+      fileName: (format) => `collection-js.${format}.js`,
     },
     rollupOptions: {
       external: [],

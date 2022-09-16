@@ -6,12 +6,12 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/collection-js.umd.cjs",
-  "module": "./dist/collection-js.js",
+  "main": "./dist/collection-js.umd.js",
+  "module": "./dist/collection-js.es.js",
   "exports": {
     ".": {
-      "import": "./dist/collection-js.js",
-      "require": "./dist/collection-js.umd.cjs"
+      "import": "./dist/collection-js.es.js",
+      "require": "./dist/collection-js.umd.js"
     }
   },
   "scripts": {
