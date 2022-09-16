@@ -5,7 +5,7 @@ import {
 class Collection {
   private items;
 
-  constructor(items: Array<any>) {
+  constructor(items: Array<any> = []) {
     this.items = items;
   }
 
