@@ -8,6 +8,14 @@
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="/dist/collection-js"></script>
+    <script type="module">
+      import { collect } from '/dist/collection-js.es.js';
+
+      const res = collect([1, 2, 3, 4, 5])
+        .map((v) => v * 2)
+        .toArray();
+
+      console.log(res);
+    </script>
   </body>
 </html>
