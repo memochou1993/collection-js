@@ -1,5 +1,7 @@
 import {
   map,
+  filter,
+  reduce,
 } from './modules';
 
 class Collection {
@@ -12,6 +14,15 @@ class Collection {
   map(callable: Function) {
     this.items = map(this.items, callable);
     return this;
+  }
+
+  filter(callable: Function) {
+    this.items = filter(this.items, callable);
+    return this;
+  }
+
+  reduce(callable: Function, init: any) {
+    return reduce(this.items, callable, init);
   }
 
   toArray() {
